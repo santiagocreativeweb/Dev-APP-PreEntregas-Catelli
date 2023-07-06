@@ -21,25 +21,25 @@ export default RenderItemTask
 const styles = StyleSheet.create({
     task: {
         width: 200,
-        padding: 10,
-        backgroundColor: "mediumpurple",
-        borderRadius: 6,
-        borderColor: "#000",
-        borderBottomWidth: 3,
-        borderRightWidth: 3,
+        height: 80,
+        padding: 20,
+        backgroundColor: "rgb(74, 85, 162)",
         marginBottom: 15,
+        justifyContent: "center",
+        borderRadius: 5
     },
     taskCompleted: {
         width: 200,
-        padding: 10,
-        backgroundColor: "chartreuse",
-        borderRadius: 6,
-        borderColor: "#000",
-        borderBottomWidth: 3,
-        borderRightWidth: 3,
+        height: 80,
+        padding: 20,
+        backgroundColor: "rgba(74, 84, 162, 0.521)",
         marginBottom: 15,
+        justifyContent: "center",
+        borderRadius: 5
     },
     taskText: {
-        fontSize: 20,
+        fontSize: 16,
+        color: "white"
     },
 })
+

@@ -5,8 +5,10 @@ const ModalTask = ({
     modalVisible,
     setModalVisible,
     taskActive,
-    onPressStatus
+    onPressStatus,
+    onPressBorrar
 }) => {
+
     return (
         <Modal
             animationType="slide"
@@ -24,14 +26,16 @@ const ModalTask = ({
                             style={[styles.button, styles.buttonCompletado]}
                             onPress={() => onPressStatus(true)}
                         >
-                            <Text style={styles.textStyle}>Completada</Text>
+                            <Text style={styles.textStyle}>Completar</Text>
                         </Pressable>
                         <Pressable
-                            style={[styles.button, styles.buttonEnProceso]}
-                            onPress={() => onPressStatus(false)}
+                        style={[styles.button, styles.buttonBorrar]}
+                        onPress={onPressBorrar}
                         >
-                            <Text style={styles.textStyle}>En Proceso</Text>
+                            
+                        <Text style={styles.textStyle}>Borrar</Text>
                         </Pressable>
+
                         <Pressable
                             style={[styles.button, styles.buttonCerrar]}
                             onPress={() => setModalVisible(!modalVisible)}
@@ -70,14 +74,14 @@ const styles = StyleSheet.create({
         elevation: 5,
     },
     buttonContainer: {
-        flexDirection: "column",
+        flexDirection: "row",
         alignItems: "center",
     },
     button: {
         borderRadius: 5,
         padding: 10,
         elevation: 2,
-        marginBottom: 10,
+        marginRight: 10,
     },
     buttonOpen: {
         backgroundColor: "#F194FF",
@@ -85,8 +89,8 @@ const styles = StyleSheet.create({
     buttonCompletado: {
         backgroundColor: "green",
     },
-    buttonEnProceso: {
-        backgroundColor: "rgba(242, 191, 52, 1)",
+    buttonBorrar: {
+        backgroundColor: "rgba(255, 0, 0, 1)",
     },
     buttonCerrar: {
         backgroundColor: "gray",

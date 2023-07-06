@@ -27,6 +27,14 @@ const MainScreen = () => {
     setList([]);
   };
 
+  const borrarTask = () => {
+    setList((prevList) =>
+      prevList.filter((task) => task.id !== taskActive.id)
+    );
+    setModalVisible(false);
+  };
+  
+
   const onPressTask = (task) => {
     console.log(task);
     setTaskActive(task);
@@ -59,6 +67,13 @@ const MainScreen = () => {
     setModalVisible(!modalVisible)
 }
 
+const onPressBorrar = () => {
+  const updatedList = list.filter((task) => task.id !== taskActive.id);
+  setList(updatedList);
+  setModalVisible(false);
+};
+
+
   return (
     <View style={styles.container}>
       <TopBar
@@ -66,14 +81,17 @@ const MainScreen = () => {
         setInput={setInput}
         onAddTask={onAddTask}
         clean={clean}
+        borrarTask={borrarTask}
       />
       <TaskList list={list} onPressTask={onPressTask} />
       <ModalTask
-        modalVisible={modalVisible}
-        setModalVisible={setModalVisible}
-        taskActive={taskActive}
-        onPressStatus={onPressStatus}
-      />
+          modalVisible={modalVisible}
+          setModalVisible={setModalVisible}
+          taskActive={taskActive}
+          onPressStatus={onPressStatus}
+          onPressBorrar={onPressBorrar}
+        />
+
     </View>
   );
 };
