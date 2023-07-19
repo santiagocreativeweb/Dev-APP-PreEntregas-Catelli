@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "clase-1",
-    "slug": "clase-1",
+    "name": "my-ecommerce",
+    "slug": "my-ecommerce",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
