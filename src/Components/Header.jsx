@@ -14,15 +14,15 @@ const Header = () => {
 export default Header
 
 const styles = StyleSheet.create({
-    containerHeader: {
-        height: '20%',
-        backgroundColor: colors.header,
-        justifyContent: 'center',
-        alignItems: 'center',
-      },
+  containerHeader: {
+    paddingVertical: 40,
+    backgroundColor: colors.header,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
       text: {
-        fontSize: 25,
-        fontFamily: 'Josefin',
-        color: colors.white
-    }
+      fontSize: 25,
+      fontFamily: 'Josefin',
+      color: colors.white
+  }
 })

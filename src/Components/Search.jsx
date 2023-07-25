@@ -1,4 +1,4 @@
-import { Pressable, StyleSheet, Text, TextInput, View } from 'react-native'
+import { Pressable, StyleSheet, Text, TextInput, View, useWindowDimensions } from 'react-native'
 import React, { useState } from 'react'
 import { FontAwesome } from '@expo/vector-icons';
 import { FontAwesome5 } from '@expo/vector-icons';
@@ -11,10 +11,11 @@ const Search = ({
     goBack
 }) => {
     const [keyword, setKeyword] = useState("")
+    const {width, height}  = useWindowDimensions()
 
   return (
-    <View style ={styles.container}>
-        <TextInput style={{ ...styles.input, color: "#fff" }}
+    <View style ={width > 350 ? styles.container : styles.containerSm}>
+        <TextInput style ={styles.input} 
             placeholder='Buscar..'
             placeholderTextColor="#fff"
             value={keyword}
@@ -42,11 +43,19 @@ export default Search
 
 const styles = StyleSheet.create({
     container: {
+        marginTop: 10,
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
         height: '10%',
         gap: 18,
+    },
+    containerSm: {
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '10%',
+        // gap: 18,
     },
     input: {
         width: 250,
@@ -54,5 +63,6 @@ const styles = StyleSheet.create({
         fontSize: 18,
         backgroundColor: colors.header,
         borderRadius: 10,
+        color: colors.white
     }
 })
