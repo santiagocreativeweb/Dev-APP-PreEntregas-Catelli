@@ -9,7 +9,7 @@ const ProductItem = ({
     const { height, width } = useWindowDimensions();
 
     const onSelect = (id) => {
-        navigation.navigate('Detail', {productId: item.id})
+        navigation.navigate('Detail', {productId: item.id, title: item.title})
     }
 
     return (
@@ -40,15 +40,12 @@ const styles = StyleSheet.create({
         height: 120,
         width: 100,
         borderRadius: 8,
-      },
-      additionalStylesCard: {
+    },
+    additionalStylesCard: {
         flexDirection: 'row',
         height: 120,
         alignItems: 'center', 
-      },
-      contentContainer: {
-        flex: 1,
-      },
+    },
     textCategory: {
         width: "50%",
         fontSize: 19,

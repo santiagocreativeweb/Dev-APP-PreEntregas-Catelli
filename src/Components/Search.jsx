@@ -3,7 +3,6 @@ import React, { useState } from 'react'
 import { FontAwesome } from '@expo/vector-icons';
 import { FontAwesome5 } from '@expo/vector-icons';
 import { colors } from '../Global/Colors';
-import { AntDesign } from '@expo/vector-icons';
 
 const Search = ({
     onSearch,
@@ -13,10 +12,15 @@ const Search = ({
     const [keyword, setKeyword] = useState("")
     const {width, height}  = useWindowDimensions()
 
+    const onErase = () => {
+        setKeyword("")
+        onSearch("")
+    }
+
   return (
     <View style ={width > 350 ? styles.container : styles.containerSm}>
         <TextInput style ={styles.input} 
-            placeholder='Buscar..'
+            placeholder='Buscar...'
             placeholderTextColor="#fff"
             value={keyword}
             onChangeText={setKeyword}
@@ -24,12 +28,10 @@ const Search = ({
         <Pressable onPress={()=>onSearch(keyword)}>
             <FontAwesome name="search" size={24} color="black" />
         </Pressable>
-        <Pressable onPress={()=> setKeyword("")}>
+        <Pressable onPress={onErase}>
             <FontAwesome5 name="eraser" size={24} color="black" />
         </Pressable>
-        <Pressable onPress={goBack}>
-            <AntDesign name="back" size={24} color="black" />
-        </Pressable>
+        
        { error ?
          <Text>
             {error}

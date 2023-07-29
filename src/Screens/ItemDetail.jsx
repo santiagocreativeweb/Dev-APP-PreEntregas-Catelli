@@ -58,9 +58,12 @@ const ItemDetail = ({
                     />
                     <View style={styles.textContainer}>
                         <Text style = {styles.text}>{product.title}</Text>
-                        <Text style = {styles.text}>{product.description}</Text>
+                       {/* <Text style = {styles.text}>{product.description}</Text> */}
                         <Text style = {styles.precio}>${product.price}</Text>
-                        <Button style={styles.addButton} title="Añadir al carrito"></Button>
+                        <Button 
+                        style={styles.addButton} 
+                        title="Añadir al carrito"
+                        ></Button>
                     </View>
                 </View>
             ) : null}

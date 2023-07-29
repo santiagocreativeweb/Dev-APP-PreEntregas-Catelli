@@ -3,6 +3,7 @@ import React from 'react'
 import { colors } from '../Global/Colors'
 import categories from '../Data/categories.json'
 import CategoryItem from '../Components/CategoryItem'
+import Counter from '../Components/Counter'
 
 const Home = ({
   navigation
@@ -14,7 +15,8 @@ const Home = ({
             keyExtractor={category => category}
             renderItem={({item}) => <CategoryItem item={item} navigation = {navigation}/>}
             showsVerticalScrollIndicator={false}
-        />
+            />
+            <Counter />
     </View>
   )
 }
@@ -23,7 +25,7 @@ export default Home
 
 const styles = StyleSheet.create({
   container: {
-    height: '90%',
+    height: '100%',
     backgroundColor: colors.white,
     alignItems: 'center'
 }

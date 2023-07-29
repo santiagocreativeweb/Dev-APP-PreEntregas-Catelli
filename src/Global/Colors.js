@@ -4,6 +4,7 @@ export const colors = {
     pink: "#FCAEAE",
     lightPink: "#FFEADD",
     header: "#393547",
+    headerchill: "#564F6C",
     white: "#fff",
     black: "#000000",
 }
