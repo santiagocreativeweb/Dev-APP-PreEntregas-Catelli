@@ -43,7 +43,7 @@ const Header = ({ route, navigation }) => {
             <View style={styles.iconsHeaderContainer}>
                 <View style={styles.iconHeader}>
                     {
-                      route.name !== 'Registrase' && route.name !== 'Ingresarse' && route.name !== 'Home' && route.name !== 'Mi Perfil' && route.name !== 'CartScreen' && route.name !== 'OrderScreen' ?
+                      route.name !== 'Registrase' && route.name !== 'Ingresarse' && route.name !== 'Home' && route.name !== 'ItemDetail' && route.name !== 'ItemDetail' && route.name !== 'Mi Perfil' && route.name !== 'CartScreen' && route.name !== 'OrderScreen' ?
                       <Pressable 
                           style={styles.pressable}
                           onPress={() => navigation.goBack()}>
