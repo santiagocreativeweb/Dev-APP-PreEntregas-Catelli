@@ -1,4 +1,4 @@
-import { FlatList, StyleSheet, Text, View } from 'react-native'
+import { FlatList, View } from 'react-native'
 import React from 'react'
 import OrderData from '../Data/orders.json'
 import OrderItem from '../Components/OrderItem'
@@ -23,4 +23,3 @@ const OrderScreen = () => {
 
 export default OrderScreen
 
-const styles = StyleSheet.create({})

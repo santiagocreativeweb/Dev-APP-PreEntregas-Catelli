@@ -14,6 +14,7 @@ const ShopStack = () => {
         <Stack.Navigator
             initialRouteName="Home"
             screenOptions={({ route, navigation }) => ({
+                animation: "fade",
                 header: () => {
                     return <Header route={route} navigation={navigation} />;
                 },

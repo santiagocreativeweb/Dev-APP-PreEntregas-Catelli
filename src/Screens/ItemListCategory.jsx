@@ -1,10 +1,10 @@
 import { FlatList, StyleSheet, View } from 'react-native'
 import React, { useEffect, useState } from 'react'
-import productsRaw from '../Data/products.json'
 import ProductItem from '../Components/ProductItem'
 import { colors } from '../Global/Colors'
 import Search from '../Components/Search'
 import { useSelector } from 'react-redux'
+import { useGetProductsByCategoryQuery } from '../Services/shopServices'
 
 const ItemListCategory = ({
   navigation,
@@ -12,8 +12,9 @@ const ItemListCategory = ({
 }) => {
 
   const {category} = route.params
-
-  const productsSelected = useSelector (state => state.shopReducer.value.productsSelected)
+  //const productsSelected = useSelector (state => state.shopReducer.value.productsSelected)
+  const categorySelected = useSelector (state => state.shopReducer.value.categorySelected)
+  const {data: productsSelected, isError, isLoading} = useGetProductsByCategoryQuery(categorySelected)
 
   const [products, setProducts] = useState([])
   const [keyword, setKeyword] = useState("")
@@ -21,8 +22,10 @@ const ItemListCategory = ({
 
   useEffect(()=> {
     //Lógica de manejo de category
-    const productsFiltered = productsSelected.filter(product => product.title.toLocaleLowerCase().includes(keyword.toLowerCase()))
-    setProducts(productsFiltered)
+    if (productsSelected) {
+      const productsFiltered = productsSelected.filter(product => product.title.toLocaleLowerCase().includes(keyword.toLowerCase()))
+      setProducts(productsFiltered)
+    }
 
   }, [productsSelected, keyword])
 

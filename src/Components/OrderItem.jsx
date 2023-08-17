@@ -42,15 +42,13 @@ const styles = StyleSheet.create({
         alignItems: "flex-start",
     },
     text: {
-        fontFamily: "Josefin",
+        fontFamily: "Poppins-Medium",
         fontSize: 17,
-        color: "black",
-        color: colors.white,
+        color: "white",
     },
     text2: {
-        fontFamily: "Josefin",
+        fontFamily: "Poppins-Medium",
         fontSize: 19,
-        color: "gray",
-        color: colors.white,
-    },
+        color: "white",
+    }
 });

@@ -3,7 +3,7 @@
         "id": 1,
         "title": "iPhone 11",
         "description": "An apple mobile which is nothing like apple",
-        "price": 399,
+        "price": 549,
         "discountPercentage": 12.96,
         "rating": 4.69,
         "stock": 94,
@@ -11,14 +11,18 @@
         "category": "Celulares",
         "thumbnail": "https://cdn.discordapp.com/attachments/730435854555807845/1130926213712576603/11.png",
         "images": [
-            "https://cdn.discordapp.com/attachments/730435854555807845/1130926213712576603/11.png"
+            "https://cdn.discordapp.com/attachments/730435854555807845/1130926213712576603/11.png",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
         ]
     },
     {
         "id": 2,
         "title": "iPhone 12",
         "description": "An apple mobile which is nothing like apple",
-        "price": 600,
+        "price": 549,
         "discountPercentage": 12.96,
         "rating": 4.69,
         "stock": 94,
@@ -26,14 +30,18 @@
         "category": "Celulares",
         "thumbnail": "https://cdn.discordapp.com/attachments/730435854555807845/1130925195775975495/ihpone_13.png",
         "images": [
-            "https://shop.litecorp.com.ar/wp-content/uploads/2021/11/iphone12-black.png"
+            "https://shop.litecorp.com.ar/wp-content/uploads/2021/11/iphone12-black.png",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
         ]
     },
     {
         "id": 3,
         "title": "iPhone 13",
         "description": "An apple mobile which is nothing like apple",
-        "price": 899,
+        "price": 549,
         "discountPercentage": 12.96,
         "rating": 4.69,
         "stock": 94,
@@ -41,14 +49,18 @@
         "category": "Celulares",
         "thumbnail": "https://cdn.discordapp.com/attachments/730435854555807845/1130925195775975495/ihpone_13.png",
         "images": [
-            "https://cdn.discordapp.com/attachments/730435854555807845/1130925195775975495/ihpone_13.png"
+            "https://cdn.discordapp.com/attachments/730435854555807845/1130925195775975495/ihpone_13.png",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
         ]
     },
     {
         "id": 4,
         "title": "iPhone 14",
         "description": "An apple mobile which is nothing like apple",
-        "price": 1200,
+        "price": 549,
         "discountPercentage": 12.96,
         "rating": 4.69,
         "stock": 94,
@@ -56,7 +68,11 @@
         "category": "Celulares",
         "thumbnail": "https://cdn.discordapp.com/attachments/730435854555807845/1130925195775975495/ihpone_13.png",
         "images": [
-            "https://cdn.discordapp.com/attachments/730435854555807845/1130925864817791068/14.png"
+            "https://cdn.discordapp.com/attachments/730435854555807845/1130925864817791068/14.png",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
         ]
     }, 
     {
@@ -71,14 +87,18 @@
         "category": "Computadoras",
         "thumbnail": "https://cdn.discordapp.com/attachments/730435854555807845/1130925195775975495/ihpone_13.png",
         "images": [
-            "https://cdn.discordapp.com/attachments/730435854555807845/1131021088177016912/1637778873_sdgf256sd.png"
+            "https://cdn.discordapp.com/attachments/730435854555807845/1131021088177016912/1637778873_sdgf256sd.png",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
         ]
     },
     {
         "id": 6,
         "title": "Macbook Pro",
         "description": "An apple mobile which is nothing like apple",
-        "price": 999,
+        "price": 549,
         "discountPercentage": 12.96,
         "rating": 4.69,
         "stock": 94,
@@ -86,14 +106,18 @@
         "category": "Computadoras",
         "thumbnail": "https://cdn.discordapp.com/attachments/730435854555807845/1130925195775975495/ihpone_13.png",
         "images": [
-            "https://cdn.discordapp.com/attachments/730435854555807845/1131021476200452177/notebook-apple-macbook-pro-m1-13-8c-8g-ssd-512gb-myd92le-a.png"
+            "https://cdn.discordapp.com/attachments/730435854555807845/1131021476200452177/notebook-apple-macbook-pro-m1-13-8c-8g-ssd-512gb-myd92le-a.png",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
         ]
     },
     {
         "id": 7,
         "title": "iMac 24",
         "description": "An apple mobile which is nothing like apple",
-        "price": 1499,
+        "price": 549,
         "discountPercentage": 12.96,
         "rating": 4.69,
         "stock": 94,
@@ -101,14 +125,18 @@
         "category": "Computadoras",
         "thumbnail": "https://cdn.discordapp.com/attachments/730435854555807845/1130925195775975495/ihpone_13.png",
         "images": [
-            "https://cdn.discordapp.com/attachments/730435854555807845/1131021935778742292/iMac24_2P_SIL_001.png"
+            "https://cdn.discordapp.com/attachments/730435854555807845/1131021935778742292/iMac24_2P_SIL_001.png",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
         ]
     },
     {
         "id": 8,
         "title": "Mac Mini",
         "description": "An apple mobile which is nothing like apple",
-        "price": 1599,
+        "price": 549,
         "discountPercentage": 12.96,
         "rating": 4.69,
         "stock": 94,
@@ -116,157 +144,11 @@
         "category": "Computadoras",
         "thumbnail": "https://cdn.discordapp.com/attachments/730435854555807845/1130925195775975495/ihpone_13.png",
         "images": [
-            "https://cdn.discordapp.com/attachments/730435854555807845/1131022151210774528/Apple_Mac_Mini_Chip_M1_ssd_512Gb_MGNT3LEA_1.png"
-        ]
-    },
-    {
-        "id": 9,
-        "title": "Adaptador de corriente USB-C",
-        "description": "An apple mobile which is nothing like apple",
-        "price": 25,
-        "discountPercentage": 12.96,
-        "rating": 4.69,
-        "stock": 94,
-        "brand": "Apple",
-        "category": "Accesorios",
-        "thumbnail": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MHXH3?wid=532&hei=582&fmt=png-alpha&.v=1661269793559",
-        "images": [
-            "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MU7V2_GEO_EMEA?wid=532&hei=582&fmt=png-alpha&.v=1544468120362"
-        ]
-    },
-    {
-        "id": 10,
-        "title": "Cargador Magsafe",
-        "description": "An apple mobile which is nothing like apple",
-        "price": 49,
-        "discountPercentage": 12.96,
-        "rating": 4.69,
-        "stock": 94,
-        "brand": "Apple",
-        "category": "Accesorios",
-        "thumbnail": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MHXH3?wid=532&hei=582&fmt=png-alpha&.v=1661269793559",
-        "images": [
-            "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MHXH3?wid=532&hei=582&fmt=png-alpha&.v=1661269793559"
-        ]
-    },
-    {
-        "id": 11,
-        "title": "Cargador doble MagSafe",
-        "description": "An apple mobile which is nothing like apple",
-        "price": 159,
-        "discountPercentage": 12.96,
-        "rating": 4.69,
-        "stock": 94,
-        "brand": "Apple",
-        "category": "Accesorios",
-        "thumbnail": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MHXH3?wid=532&hei=582&fmt=png-alpha&.v=1661269793559",
-        "images": [
-            "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MHXF3?wid=532&hei=582&fmt=png-alpha&.v=1602179308000"
-        ]
-    },
-    {
-        "id": 12,
-        "title": "Bateria MagSafe",
-        "description": "An apple mobile which is nothing like apple",
-        "price": 119,
-        "discountPercentage": 12.96,
-        "rating": 4.69,
-        "stock": 94,
-        "brand": "Apple",
-        "category": "Accesorios",
-        "thumbnail": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MHXH3?wid=532&hei=582&fmt=png-alpha&.v=1661269793559",
-        "images": [
-            "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MJWY3?wid=532&hei=582&fmt=png-alpha&.v=1625613219000"
-        ]
-    },
-    {
-        "id": 13,
-        "title": "Adaptador de corriente con dos puertos USB‑C",
-        "description": "An apple mobile which is nothing like apple",
-        "price": 65,
-        "discountPercentage": 12.96,
-        "rating": 4.69,
-        "stock": 94,
-        "brand": "Apple",
-        "category": "Accesorios",
-        "thumbnail": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MHXH3?wid=532&hei=582&fmt=png-alpha&.v=1661269793559",
-        "images": [
-            "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MNWP3_GEO_EMEA?wid=532&hei=582&fmt=png-alpha&.v=1653576603172"
-        ]
-    },
-    {
-        "id": 14,
-        "title": "Adaptador de conector Lightning a AV digital",
-        "description": "An apple mobile which is nothing like apple",
-        "price": 59,
-        "discountPercentage": 12.96,
-        "rating": 4.69,
-        "stock": 94,
-        "brand": "Apple",
-        "category": "Accesorios",
-        "thumbnail": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MHXH3?wid=532&hei=582&fmt=png-alpha&.v=1661269793559",
-        "images": [
-            "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MD826?wid=532&hei=582&fmt=png-alpha&.v=1566858915905"
-        ]
-    },
-    {
-        "id": 15,
-        "title": "AirPods (2° Generacion)",
-        "description": "An apple mobile which is nothing like apple",
-        "price": 159,
-        "discountPercentage": 12.96,
-        "rating": 4.69,
-        "stock": 94,
-        "brand": "Apple",
-        "category": "Auliculares",
-        "thumbnail": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MHXH3?wid=532&hei=582&fmt=png-alpha&.v=1661269793559",
-        "images": [
-            "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MV7N2?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1551489688005"
-        ]
-    },
-    {
-        "id": 16,
-        "title": "AirPods Pro (2° Generacion)",
-        "description": "An apple mobile which is nothing like apple",
-        "price": 209,
-        "discountPercentage": 12.96,
-        "rating": 4.69,
-        "stock": 94,
-        "brand": "Apple",
-        "category": "Auliculares",
-        "thumbnail": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MHXH3?wid=532&hei=582&fmt=png-alpha&.v=1661269793559",
-        "images": [
-            "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MQD83?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1660803972361"
-        ]
-    },
-    {
-        "id": 17,
-        "title": "AirPods (3° Generacion)",
-        "description": "An apple mobile which is nothing like apple",
-        "price": 299,
-        "discountPercentage": 12.96,
-        "rating": 4.69,
-        "stock": 94,
-        "brand": "Apple",
-        "category": "Auliculares",
-        "thumbnail": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MHXH3?wid=532&hei=582&fmt=png-alpha&.v=1661269793559",
-        "images": [
-            "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MME73?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1632861342000"
-        ]
-    },
-    {
-        "id": 18,
-        "title": "AirPods Max",
-        "description": "An apple mobile which is nothing like apple",
-        "price": 629,
-        "discountPercentage": 12.96,
-        "rating": 4.69,
-        "stock": 94,
-        "brand": "Apple",
-        "category": "Auliculares",
-        "thumbnail": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MHXH3?wid=532&hei=582&fmt=png-alpha&.v=1661269793559",
-        "images": [
-            "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/airpods-max-hero-select-202011?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1604709293000"
+            "https://cdn.discordapp.com/attachments/730435854555807845/1131022151210774528/Apple_Mac_Mini_Chip_M1_ssd_512Gb_MGNT3LEA_1.png",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
         ]
     }
 ]

@@ -9,7 +9,8 @@ import {
 } from "react-native";
 import React, { useEffect, useState } from "react";
 import allProducts from "../Data/products.json";
-import { colors } from '../Global/Colors'
+import { useDispatch } from "react-redux";
+import { addCartItem } from "../Features/Cart/cartSlice";
 
 const ItemDetail = ({ 
     navigation,
@@ -17,6 +18,8 @@ const ItemDetail = ({
 }) => {
 
     const {productId: idSelected} = route.params
+
+    const dispatch = useDispatch()
 
     const [product, setProduct] = useState(null);
     const [orientation, setOrientation] = useState("portrait");
@@ -35,22 +38,23 @@ const ItemDetail = ({
         setProduct(productSelected);
     }, [idSelected]);
 
+    const onAddCart = () => {
+        dispatch(addCartItem({
+            ...product,
+            quantity: 1
+        }))
+    }
+
     return (
         <View>
-          <Pressable
-            style={styles.volver}
-            onPress={() => navigation.goBack()}
-          >
-            <Text style={styles.buttonText}>Volver atras</Text>
-          </Pressable>
-          {product ? (
-            <View
-              style={
-                orientation === "portrait"
-                  ? styles.mainContainer
-                  : styles.mainContainerLandscape
-              }
-            >
+            {product ? (
+                <View
+                    style={
+                        orientation === "portrait"
+                            ? styles.mainContainer
+                            : styles.mainContainerLandscape
+                    }
+                >
                     <Image
                         source={{ uri: product.images[0] }}
                         style={styles.image}
@@ -58,11 +62,10 @@ const ItemDetail = ({
                     />
                     <View style={styles.textContainer}>
                         <Text style = {styles.text}>{product.title}</Text>
-                       {/* <Text style = {styles.text}>{product.description}</Text> */}
-                        <Text style = {styles.precio}>${product.price}</Text>
-                        <Button 
-                        style={styles.addButton} 
-                        title="Añadir al carrito"
+                        <Text style = {styles.text}>{product.description}</Text>
+                        <Text style = {styles.text}>${product.price}</Text>
+                        <Button title="Add cart"
+                            onPress={onAddCart}
                         ></Button>
                     </View>
                 </View>
@@ -95,34 +98,6 @@ const styles = StyleSheet.create({
         flexDirection: "column",
     },
     text: {
-        marginTop: 10,
         fontSize: 20,
-    },
-    precio: {
-        fontSize: 20,
-        backgroundColor: colors.header,
-        padding: 15,
-        borderWidth: 2, 
-        borderStyle: 'solid', 
-        borderColor: colors.black,
-        color: colors.white,
-        marginTop: 15,
-        marginBottom: 15
-    },
-    volver: {
-        padding: 10,
-        backgroundColor: colors.red,
-        marginBottom: 10,
-    },  
-    addButton: {
-        padding: 10,
-        backgroundColor: "green",
-        borderRadius: 5,
-    },
-    buttonText: {
-        color: "white", 
-        fontSize: 16,
-        fontWeight: "bold",
-        textAlign: "center",
-    },
+    }
 });

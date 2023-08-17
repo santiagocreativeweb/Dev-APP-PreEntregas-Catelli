@@ -51,12 +51,12 @@ const styles = StyleSheet.create({
     alignItems: "flex-start",
   },
   text: {
-    fontFamily: "Josefin",
+    fontFamily: "Poppins-Medium",
     fontSize: 19,
     color: colors.white,
   },
   text2: {
-    fontFamily: "Josefin",
+    fontFamily: "Poppins-Medium",
     fontSize: 14,
     color: colors.white,
   },
