@@ -1,7 +1,7 @@
 
 # 📱 Punto Digital - App Ecommerce
 
-Punto Digital, fue desarrollada para un aprendizaje en el curso de [CODERHOUSE](https://www.coderhouse.com/). Fue llevada a cabo en **10 semanas (40 horas)** En la app puedes interactuar para hacer compras, modificar tu perfil y demas. Un Ecommerce Funcional 
+Punto Digital, fue desarrollada para un aprendizaje en el curso de [CODERHOUSE](https://www.coderhouse.com/). Fue llevada a cabo en **10 semanas (40 horas)** En la app puedes interactuar para hacer compras, modificar tu perfil y demas. Un Ecommerce Funcional. 
 
 
 
@@ -24,6 +24,7 @@ Punto Digital, fue desarrollada para un aprendizaje en el curso de [CODERHOUSE](
 - Recibes alertas al comprar o recibir errores 
 - Validaciones de expresiones o Authenticacion
 - Realtime Database & Authentication en uso 
+- APK 
 - Paleta de Colores 
 
 
