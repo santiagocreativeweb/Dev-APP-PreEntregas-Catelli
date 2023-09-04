@@ -7,12 +7,8 @@ export const userSlice = createSlice({
             email: "",
             idToken: "",
             localId: "",
-            profileImage: "",
-            location: {
-                latitude: "",
-                longitude: "",
-                address: ""
-            },
+            name: "",
+            profileImage: ""
         }
     },
     reducers: {
@@ -24,19 +20,14 @@ export const userSlice = createSlice({
                 email: "",
                 idToken: "",
                 localId: "",
-                profileImage: "",
-                location: {
-                    latitude: "",
-                    longitude: "",
-                    address: ""
-                },
+                profileImage: ""
             }
         },
         saveImage: (state, action) => {
             state.value.profileImage = action.payload
         },
-        setUserLocation: (state, action) => {
-            state.value.location = action.payload
+        saveName: (state, action) => {
+            state.value.name = action.payload
         }
     }
 })
@@ -45,7 +36,6 @@ export const {
     setUser, 
     signOut, 
     saveImage,
-    setUserLocation
 } = userSlice.actions
 
 export default userSlice.reducer

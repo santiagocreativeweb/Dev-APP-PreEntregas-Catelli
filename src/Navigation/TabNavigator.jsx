@@ -1,17 +1,16 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
 import {
-    Ionicons,
     Fontisto,
-    Foundation,
+    Ionicons,
     FontAwesome5,
 } from "@expo/vector-icons";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { colors } from "../Global/Colors";
 import ShopStack from "./ShopStack";
 import CartStack from "./CartStack";
-import OrderStack from "./OrderStack";
 import MyProfileStack from "./MyProfileStack";
-import { colors } from "../Global/Colors";
+import HomeStack from "./HomeStack";
 
 const Tab = createBottomTabNavigator();
 
@@ -25,19 +24,26 @@ const TabNavigator = () => {
         }}
     >
         <Tab.Screen
+            name="Home"
+            component={HomeStack}
+            options={{
+                tabBarIcon: ({ focused }) => {
+                    return (
+                        <View>
+                            <Fontisto name="home" size={24} color={ focused ? "white" : "gray" } />
+                        </View>
+                    );
+                },
+            }}
+        />
+        <Tab.Screen
             name="Shop"
             component={ShopStack}
             options={{
                 tabBarIcon: ({ focused }) => {
                     return (
                         <View>
-                            <Fontisto
-                                name="shopping-store"
-                                size={24}
-                                color={
-                                    focused ? "white" : "gray"
-                                }
-                            />
+                            <FontAwesome5 name="tag" size={24} color={  focused ? "white" : "gray" } />
                         </View>
                     );
                 },
@@ -50,32 +56,7 @@ const TabNavigator = () => {
                 tabBarIcon: ({ focused }) => {
                     return (
                         <View>
-                            <Foundation
-                                name="shopping-cart"
-                                size={30}
-                                color={
-                                    focused ? "white" : "gray"
-                                }
-                            />
-                        </View>
-                    );
-                },
-            }}
-        />
-        <Tab.Screen
-            name="Orders"
-            component={OrderStack}
-            options={{
-                tabBarIcon: ({ focused }) => {
-                    return (
-                        <View>
-                            <FontAwesome5
-                                name="list-ul"
-                                size={24}
-                                color={
-                                    focused ? "white" : "gray"
-                                }
-                            />
+                            <FontAwesome5 name="shopping-cart"  size={24}  color={ focused ? "white" : "gray" } />
                         </View>
                     );
                 },
@@ -88,13 +69,7 @@ const TabNavigator = () => {
                 tabBarIcon: ({ focused }) => {
                     return (
                         <View style={styles.item}>
-                            <Ionicons
-                                name="person-circle-outline"
-                                size={24}
-                                color={
-                                    focused ? "white" : "gray"
-                                }
-                            />
+                            <Ionicons name="person-circle-outline"  size={30} color={ focused ? "white" : "gray"  } />
                         </View>
                     );
                 },
@@ -108,7 +83,7 @@ export default TabNavigator
 
 const styles = StyleSheet.create({
     tabBar: {
-        backgroundColor: colors.header,
+        backgroundColor: colors.primary,
         shadowColor: "black",
         height: 60,
     },

@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import { Image, View, StyleSheet, Text } from "react-native";
-import * as ImagePicker from "expo-image-picker";
-import AddButton from "../Components/AddButton";
-import { colors } from "../Global/Colors";
-import * as MediaLibrary from "expo-media-library";
-import { usePostProfileImageMutation } from "../Services/shopServices";
 import { useDispatch, useSelector } from "react-redux";
+import * as ImagePicker from "expo-image-picker";
+import * as MediaLibrary from "expo-media-library";
+import { colors } from "../Global/Colors";
+import { usePostProfileImageMutation } from "../Services/shopServices";
 import { saveImage } from "../Features/User/userSlice";
+import AddButton from "../Components/buttons/AddButton";
+import Toast from 'react-native-toast-message';
+
 
 const ImageSelector = ({ navigation }) => {
     const [image, setImage] = useState(null);
@@ -25,20 +27,19 @@ const ImageSelector = ({ navigation }) => {
 
     const pickImage = async () => {
 
-        //Permission for camera
+        //Permisos de la camara
         const isCameraOk = await verifyCameraPermissions();
 
         if (isCameraOk) {
-            // No permissions request is necessary for launching the image library
+
+            // No es necesario ninguna request para iniciar la biblioteca de imágenes
             let result = await ImagePicker.launchCameraAsync({
                 mediaTypes: ImagePicker.MediaTypeOptions.All,
                 allowsEditing: true,
                 aspect: [1, 1],
-                //base64: true,
                 quality: 1,
             });
 
-            console.log(result.assets);
 
             if (!result.canceled) {
                 setImage(result.assets[0].uri);
@@ -48,23 +49,22 @@ const ImageSelector = ({ navigation }) => {
 
     const confirmImage = async () => {
         try {
-            // Request device storage access permission
             const { status } = await MediaLibrary.requestPermissionsAsync();
             if (status === "granted") {
-                console.log("Only valid on emulators and physical devices");
-                // Save image to media library and create an asset
                 const response = await MediaLibrary.createAssetAsync(image);
-                console.log(response.uri);
-                //Save image link on profileImages remote location
                 triggerSaveImage({
                     image: response.uri,
                     localId: localId,
                 });
-                // Set image on redux state
                 dispatch(saveImage(response.uri));
             }
         } catch (error) {
-            console.log(error);
+            Toast.show({
+                type: 'error',
+                text1: `Ups..`,
+                text2: 'Hubo un error, intente mas tarde',
+                topOffset: 100,
+              });
         }
         navigation.goBack();
     };
@@ -107,7 +107,7 @@ const styles = StyleSheet.create({
         width: 200,
         height: 200,
         borderWidth: 2,
-        borderColor: colors.header,
+        borderColor: colors.primary,
         padding: 10,
         justifyContent: "center",
         alignItems: "center",

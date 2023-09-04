@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "PreEntrega6Catelli",
-    "slug": "PreEntrega6Catelli",
+    "slug": "preentrega6catelli",
     "version": "1.0.0",
     "icon": "./assets/favicon.png",
     "userInterfaceStyle": "light",
@@ -28,8 +28,9 @@
     },
     "extra": {
       "eas": {
-        "projectId": "063d3b74-8934-43c4-8c01-8862ca9a422e"
+        "projectId": "23951c10-7cfb-4ec3-9baf-bcfef6681f81"
       }
-    }
+    },
+    "owner": "santisgo"
   }
 }

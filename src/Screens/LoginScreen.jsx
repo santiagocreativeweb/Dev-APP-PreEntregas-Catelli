@@ -1,13 +1,15 @@
-import { Pressable, StyleSheet, Text, View } from "react-native";
 import React, { useEffect, useState } from "react";
-import InputForm from "../Components/InputForm";
-import SubmitButton from "../Components/SubmitButton";
+import { Pressable, StyleSheet, Text, View } from "react-native";
+import { useDispatch } from "react-redux";
+import { insertSession } from "../SQLite";
 import { colors } from "../Global/Colors";
 import { useSignInMutation } from "../Services/authServices";
 import { isAtLeastSixCharacters, isValidEmail } from "../Validations/auth";
-import { useDispatch } from "react-redux";
 import { setUser } from "../Features/User/userSlice";
-import { insertSession } from "../SQLite";
+import InputForm from "../Components/inputs/input-login/InputForm";
+import SubmitButton from "../Components/buttons/SubmitButton";
+import Toast from 'react-native-toast-message';
+
 
 const LoginScreen = ({ navigation }) => {
     const [email, setEmail] = useState('');
@@ -21,7 +23,7 @@ const LoginScreen = ({ navigation }) => {
     const [triggerSignIn, resultSignIn] = useSignInMutation();
     const onSubmit = () => {
 
-        //Submit logic with validations
+        //Logica con validaciones
         const isValidVariableEmail = isValidEmail(email)
         const isCorrectPassword = isAtLeastSixCharacters(password)
 
@@ -33,7 +35,7 @@ const LoginScreen = ({ navigation }) => {
             });
         }
 
-        if (!isValidVariableEmail) setErrorEmail ('El Email no es correcto')
+        if (!isValidVariableEmail) setErrorEmail ('El email no es correcto')
         else setErrorEmail('')
         if (!isCorrectPassword) setErrorPassword ('La contraseña debe tener mas de 6 caracteres')
         else setErrorPassword('')
@@ -44,29 +46,27 @@ const LoginScreen = ({ navigation }) => {
             try {
                 if(resultSignIn.isSuccess) {
 
-                    //Insert session in SQLite database
-                    console.log('inserting Session');
+                    //Insertamos sessiones a la database con SQLITE
                     const response = await insertSession({
                         idToken: resultSignIn.data.idToken,
                         localId: resultSignIn.data.localId,
                         email: resultSignIn.data.email,
                     })
-                    console.log('Session inserted: ');
-                    console.log(response);
 
                     dispatch(setUser({
                         email: resultSignIn.data.email,
                         idToken: resultSignIn.data.idToken,
                         localId: resultSignIn.data.localId,
                         profileImage: "",
-                        location: {
-                            latitude: "",
-                            longitude: "",
-                        }
                     }))
                 }
             } catch (error) {
-                console.log(error.message);
+                Toast.show({
+                    type: 'error',
+                    text1: `Ups..`,
+                    text2: 'Hubo un error, intente mas tarde',
+                    topOffset: 100,
+                });
             }
         })()
     }, [resultSignIn])
@@ -87,9 +87,9 @@ const LoginScreen = ({ navigation }) => {
                     isSecure={true}
                 />
                 <SubmitButton onPress={onSubmit} title="Confirmar" />
-                <Text style={styles.sub}>¿No tienes una cuenta?</Text>
+                <Text style={styles.sub}>¿Aun no tienes una cuenta?</Text>
                 <Pressable onPress={() => navigation.navigate("Registrase")}>
-                    <Text style={styles.subLink}>Registrarse</Text>
+                    <Text style={styles.subLink}>Registrate</Text>
                 </Pressable>
             </View>
         </View>
@@ -126,6 +126,11 @@ const styles = StyleSheet.create({
         color: "black",
     },
     subLink: {
+        padding: 7, 
+        borderColor: colors.red, 
+        borderRadius: 25,
+        borderStyle: "solid",
+        borderWidth: 1,
         fontSize: 14,
         fontFamily: "Poppins-Medium",
         color: "red",

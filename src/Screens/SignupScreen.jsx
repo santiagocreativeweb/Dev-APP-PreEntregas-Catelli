@@ -1,16 +1,14 @@
-import { Pressable, StyleSheet, Text, View } from "react-native";
 import React, { useEffect, useState } from "react";
-import InputForm from "../Components/InputForm";
-import SubmitButton from "../Components/SubmitButton";
+import { Pressable, StyleSheet, Text, View } from "react-native";
+import { useDispatch } from "react-redux";
 import { colors } from "../Global/Colors";
 import { useSignUpMutation } from "../Services/authServices";
-import { useDispatch } from "react-redux";
 import { setUser } from "../Features/User/userSlice";
 import { isAtLeastSixCharacters, isValidEmail } from "../Validations/auth";
-/* import { useSignUpMutation } from "../services/authService";
-import { useDispatch } from "react-redux";
-import { setUser } from "../features/auth/authSlice";
-import { signupSchema } from "../validations/singupSchema"; */
+import SubmitButton from "../Components/buttons/SubmitButton";
+import InputForm from "../Components/inputs/input-login/InputForm";
+import Toast from 'react-native-toast-message';
+
 
 const SignupScreen = ({ navigation }) => {
     const [email, setEmail] = useState("");
@@ -31,10 +29,6 @@ const SignupScreen = ({ navigation }) => {
                     idToken: result.data.idToken,
                     localId: result.data.localId,
                     profileImage: "",
-                    location: {
-                        latitude: "",
-                        longitude: "",
-                    },
                 })
             )
         }
@@ -42,7 +36,7 @@ const SignupScreen = ({ navigation }) => {
 
     const onSubmit = () => {
         try {
-            //Submit logic with validations
+            //Logica con validaciones
             const isValidVariableEmail = isValidEmail(email)
             const isCorrectPassword = isAtLeastSixCharacters(password)
             const isRepeatedPasswordCorrect = password === confirmPassword
@@ -56,16 +50,20 @@ const SignupScreen = ({ navigation }) => {
                 triggerSignUp(request)
             }
 
-            if (!isValidVariableEmail) setErrorMail ('Email is not correct')
+            if (!isValidVariableEmail) setErrorEmail ('El email no es correcto')
             else setErrorMail('')
-            if (!isCorrectPassword) setErrorPassword ('Password must be at least 6 characters')
+            if (!isCorrectPassword) setErrorPassword ('La contraseña debe tener mas de 6 caracteres')
             else setErrorPassword('')
-            if (!isRepeatedPasswordCorrect) setErrorConfirmPassword ('Passwords must match')
+            if (!isRepeatedPasswordCorrect) setErrorConfirmPassword ('Las contraseñas no coiciden')
             else setErrorConfirmPassword('')
 
         } catch (err) {
-            console.log("Catch error");
-            console.log(err.message);
+            Toast.show({
+                type: 'error',
+                text1: `Ups..`,
+                text2: 'Hubo un error, intente mas tarde',
+                topOffset: 100,
+            });
         }
     };
 
@@ -132,6 +130,11 @@ const styles = StyleSheet.create({
         color: "black",
     },
     subLink: {
+        padding: 7, 
+        borderColor: colors.red, 
+        borderRadius: 25,
+        borderStyle: "solid",
+        borderWidth: 1,
         fontSize: 14,
         fontFamily: "Poppins-Medium",
         color: "red",

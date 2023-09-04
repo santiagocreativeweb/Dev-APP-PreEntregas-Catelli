@@ -4,19 +4,19 @@ export const cartSlice = createSlice({
     name: "Cart",
     initialState: {
         value: {
-            user: "Hardcoder user",
+            user: "",
             updatedAt: "",
-            total: null,
+            total: 0,
             items: []
         }
     },
     reducers: {
         addCartItem: (state, action) => {
-            //Logic to add item
-            //1. Check productExists
+            //Logica para añadir item
+            //1. Checkeamos si el item existe
             const productExists = state.value.items.some(item => item.id === action.payload.id)
 
-            //2. Distinct logic if exists product or not
+            //2. Logica distinta si existe producto o no.
             if (productExists) {
                 state.value.items = state.value.items.map(item => {
                     if (item.id === action.payload.id) {
@@ -27,17 +27,20 @@ export const cartSlice = createSlice({
                 })
             } else state.value.items.push(action.payload)
 
-            //3. Update total
+            //3. Suma total del carrito
             state.value.total = state.value.items.reduce(
                 (acc, currentItem) => acc += currentItem.price * currentItem.quantity,
                 0
             )
 
-            //4. Update updatedAt
-            state.value.updatedAt = new Date().toLocaleString()
         },
         removeCartItem: (state,action) => {
-            //Logic to remove item
+            let newItems = state.value.items.filter(item => item.id != action.payload)
+            state.value.items = [...newItems]
+            state.value.total = state.value.items.reduce(
+                (acc, currentItem) => acc += currentItem.price * currentItem.quantity,
+                0
+            )
         }
     }
 })

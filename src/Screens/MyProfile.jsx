@@ -1,32 +1,47 @@
+import React from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Image, StyleSheet, View, Text, TouchableOpacity } from "react-native";
-import React, { useState } from "react";
-import AddButton from "../Components/AddButton";
-import * as ImagePicker from 'expo-image-picker'
-import { useSelector } from "react-redux";
+import { useRoute } from '@react-navigation/native'; 
+import { Feather } from '@expo/vector-icons';
 import { useGetProfileImageQuery } from "../Services/shopServices";
+import { signOut } from "../Features/User/userSlice";
+import { deleteSession } from "../SQLite/index";
 import { colors } from "../Global/Colors";
+import Toast from 'react-native-toast-message';
+
 
 const MyProfile = ({navigation}) => {
-    // const {profileImage, imageCamera} = useSelector(state => state.authReducer.value);
-
-    const {localId, profileImage} = useSelector(state => state.userReducer.value)
-
-    const {data: image} = useGetProfileImageQuery(localId)
-
-    console.log(image);
-
-    const cameraImage = image?.image
-
-    const launchCamera = async () => {
-        navigation.navigate('Seleccionar Imagen')
-    };
-
+    // usuario
+    const route = useRoute(); 
+    const newUsername = route.params?.newUsername;
+    const { localId, profileImage } = useSelector(state => state.userReducer.value);
     const nombreUsuario = async () => {
         navigation.navigate('Nombre de Usuario')
     };
 
+    // camara
+    const {data: image} = useGetProfileImageQuery(localId)
+    const cameraImage = image?.image
+    const launchCamera = async () => {
+        navigation.navigate('Seleccionar Imagen')
+    };
 
-    console.log(profileImage);
+    // cerrar session
+    const dispatch = useDispatch();
+
+    const onSignout = async () => {
+        try {
+            const response = await deleteSession(localId)
+            dispatch(signOut())
+        } catch (error) {
+            Toast.show({
+                type: 'error',
+                text1: `Ups..`,
+                text2: 'Hubo un error, intente mas tarde',
+                topOffset: 100,
+            });
+        }
+    }
 
     return (
         <View style={styles.container}>
@@ -43,14 +58,19 @@ const MyProfile = ({navigation}) => {
                     resizeMode="cover"
                 />
             )}
-            <Text style={styles.nombre} >Santiago Catelli</Text>
+            <Text style={styles.nombre}>{newUsername || "Registra tu usuario!"}</Text>
             <View>
-{/*             <TouchableOpacity style={styles.button} onPress={nombreUsuario}>
-                <Text style={styles.buttonText}>Agregar Nombre de usuario</Text>
-            </TouchableOpacity>  PROXIMA MENTE EN LA ENTREGA FINAL */} 
+            <TouchableOpacity style={styles.button} onPress={nombreUsuario}>
+                <Text style={styles.buttonText}>Nombre de usuario</Text>
+            </TouchableOpacity> 
             <TouchableOpacity style={styles.button} onPress={launchCamera}>
-                <Text style={styles.buttonText}>Agregar Imagen de perfil</Text>
+                <Text style={styles.buttonText}>Imagen de perfil</Text>
             </TouchableOpacity>
+            <TouchableOpacity style={styles.buttonCerrarSession} onPress={onSignout}>
+                <Feather name="user-x" size={24} color="white" />
+                <Text style={styles.buttonTextCerrarSession}>Cerrar sesion</Text>
+            </TouchableOpacity>
+                <Text style={styles.footer}>Created by Santiago Catelli</Text>
         </View>
         </View>
     );
@@ -73,7 +93,7 @@ const styles = StyleSheet.create({
     button: {
         padding: 15,
         borderRadius: 5,
-        backgroundColor: colors.header,
+        backgroundColor: colors.primary,
         margin: 10,
     },
     buttonText: {
@@ -82,5 +102,25 @@ const styles = StyleSheet.create({
     },  
     nombre: {
         fontSize: 24,
+    },
+    buttonCerrarSession: {
+        flexDirection: 'row', 
+        alignItems: 'center', 
+        justifyContent: "center",
+        padding: 15,
+        borderRadius: 5,
+        backgroundColor: colors.primary,
+        textAlign: "center",
+        marginTop: 195,
+    },
+    buttonTextCerrarSession: {
+        color: colors.white,
+        textAlign: "center",
+        fontSize: 16,
+        marginLeft: 10, 
+    }, 
+    footer: {
+        textAlign: "center",
+        marginRight: 15
     }
 });

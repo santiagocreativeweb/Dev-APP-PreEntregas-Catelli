@@ -1,10 +1,10 @@
-import { FlatList, StyleSheet, View } from 'react-native'
 import React, { useEffect, useState } from 'react'
-import ProductItem from '../Components/ProductItem'
-import { colors } from '../Global/Colors'
-import Search from '../Components/Search'
+import { FlatList, StyleSheet, View } from 'react-native'
 import { useSelector } from 'react-redux'
 import { useGetProductsByCategoryQuery } from '../Services/shopServices'
+import { colors } from '../Global/Colors'
+import ProductItem from '../Components/items/ProductItem'
+import Buscador from '../Components/buscador/Buscador'
 
 const ItemListCategory = ({
   navigation,
@@ -12,7 +12,6 @@ const ItemListCategory = ({
 }) => {
 
   const {category} = route.params
-  //const productsSelected = useSelector (state => state.shopReducer.value.productsSelected)
   const categorySelected = useSelector (state => state.shopReducer.value.categorySelected)
   const {data: productsSelected, isError, isLoading} = useGetProductsByCategoryQuery(categorySelected)
 
@@ -21,7 +20,7 @@ const ItemListCategory = ({
   const [keywordError, setKeywordError] = useState("")
 
   useEffect(()=> {
-    //Lógica de manejo de category
+    //Lógica de manejo de categoria
     if (productsSelected) {
       const productsFiltered = productsSelected.filter(product => product.title.toLocaleLowerCase().includes(keyword.toLowerCase()))
       setProducts(productsFiltered)
@@ -44,7 +43,7 @@ const ItemListCategory = ({
 
   return (
     <View style={styles.container}>
-        <Search
+        <Buscador
           onSearch={onSearch}
           error={keywordError}
           goBack={()=> navigation.goBack()}
@@ -67,7 +66,7 @@ export default ItemListCategory
 const styles = StyleSheet.create({
   container: {
     height: '100%',
-    backgroundColor: colors.white,
+    backgroundColor: colors.terciary,
     alignItems: 'center'
 }
 })

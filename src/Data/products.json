@@ -2,153 +2,241 @@
     {
         "id": 1,
         "title": "iPhone 11",
-        "description": "An apple mobile which is nothing like apple",
-        "price": 549,
-        "discountPercentage": 12.96,
-        "rating": 4.69,
-        "stock": 94,
-        "brand": "Apple",
+        "description": "The iPhone 11 is a powerful smartphone from Apple. It features a stunning 6.1-inch Liquid Retina display, A13 Bionic chip, and dual-camera system. With great performance and exceptional camera capabilities, it's perfect for capturing memories and staying connected.",
+        "price": 350,
         "category": "Celulares",
-        "thumbnail": "https://cdn.discordapp.com/attachments/730435854555807845/1130926213712576603/11.png",
         "images": [
-            "https://cdn.discordapp.com/attachments/730435854555807845/1130926213712576603/11.png",
-            "https://i.dummyjson.com/data/products/1/2.jpg",
-            "https://i.dummyjson.com/data/products/1/3.jpg",
-            "https://i.dummyjson.com/data/products/1/4.jpg",
-            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+            "https://cdn.discordapp.com/attachments/730435854555807845/1130926213712576603/11.png"
         ]
     },
     {
         "id": 2,
         "title": "iPhone 12",
-        "description": "An apple mobile which is nothing like apple",
-        "price": 549,
-        "discountPercentage": 12.96,
-        "rating": 4.69,
-        "stock": 94,
-        "brand": "Apple",
+        "description": "The iPhone 12 is a flagship smartphone by Apple. It features a Super Retina XDR display, A14 Bionic chip, and 5G capability. With its sleek design and advanced features, it offers a premium smartphone experience.",
+        "price": 599,
         "category": "Celulares",
-        "thumbnail": "https://cdn.discordapp.com/attachments/730435854555807845/1130925195775975495/ihpone_13.png",
         "images": [
-            "https://shop.litecorp.com.ar/wp-content/uploads/2021/11/iphone12-black.png",
-            "https://i.dummyjson.com/data/products/1/2.jpg",
-            "https://i.dummyjson.com/data/products/1/3.jpg",
-            "https://i.dummyjson.com/data/products/1/4.jpg",
-            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+            "https://shop.litecorp.com.ar/wp-content/uploads/2021/11/iphone12-black.png"
         ]
     },
     {
         "id": 3,
         "title": "iPhone 13",
-        "description": "An apple mobile which is nothing like apple",
-        "price": 549,
-        "discountPercentage": 12.96,
-        "rating": 4.69,
-        "stock": 94,
-        "brand": "Apple",
+        "description": "The iPhone 13 is Apple's latest offering in the smartphone market. It boasts a Super Retina XDR display, A15 Bionic chip, and improved camera system with advanced low-light performance. With its impressive features, it's a great choice for mobile enthusiasts.",
+        "price": 599,
         "category": "Celulares",
-        "thumbnail": "https://cdn.discordapp.com/attachments/730435854555807845/1130925195775975495/ihpone_13.png",
         "images": [
-            "https://cdn.discordapp.com/attachments/730435854555807845/1130925195775975495/ihpone_13.png",
-            "https://i.dummyjson.com/data/products/1/2.jpg",
-            "https://i.dummyjson.com/data/products/1/3.jpg",
-            "https://i.dummyjson.com/data/products/1/4.jpg",
-            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+            "https://cdn.discordapp.com/attachments/730435854555807845/1130925195775975495/ihpone_13.png"
         ]
     },
     {
         "id": 4,
         "title": "iPhone 14",
-        "description": "An apple mobile which is nothing like apple",
-        "price": 549,
-        "discountPercentage": 12.96,
-        "rating": 4.69,
-        "stock": 94,
-        "brand": "Apple",
+        "description": "The iPhone 14 is Apple's flagship smartphone for those seeking the best. It features a stunning display, a powerful chip, and advanced camera technology. With its cutting-edge features, it's designed to meet the demands of tech enthusiasts.",
+        "price": 1099,
         "category": "Celulares",
-        "thumbnail": "https://cdn.discordapp.com/attachments/730435854555807845/1130925195775975495/ihpone_13.png",
         "images": [
-            "https://cdn.discordapp.com/attachments/730435854555807845/1130925864817791068/14.png",
-            "https://i.dummyjson.com/data/products/1/2.jpg",
-            "https://i.dummyjson.com/data/products/1/3.jpg",
-            "https://i.dummyjson.com/data/products/1/4.jpg",
-            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+            "https://cdn.discordapp.com/attachments/730435854555807845/1130925864817791068/14.png"
         ]
-    }, 
+    },
     {
         "id": 5,
         "title": "Macbook Air",
-        "description": "An apple mobile which is nothing like apple",
-        "price": 549,
-        "discountPercentage": 12.96,
-        "rating": 4.69,
-        "stock": 94,
-        "brand": "Apple",
+        "description": "The MacBook Air is Apple's ultra-thin and lightweight laptop. It features a Retina display, Apple M1 chip, and long battery life. Whether you're working on projects or watching movies, it offers exceptional performance in a sleek design.",
+        "price": 999,
         "category": "Computadoras",
-        "thumbnail": "https://cdn.discordapp.com/attachments/730435854555807845/1130925195775975495/ihpone_13.png",
         "images": [
-            "https://cdn.discordapp.com/attachments/730435854555807845/1131021088177016912/1637778873_sdgf256sd.png",
-            "https://i.dummyjson.com/data/products/1/2.jpg",
-            "https://i.dummyjson.com/data/products/1/3.jpg",
-            "https://i.dummyjson.com/data/products/1/4.jpg",
-            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+            "https://cdn.discordapp.com/attachments/730435854555807845/1131021088177016912/1637778873_sdgf256sd.png"
         ]
     },
     {
         "id": 6,
         "title": "Macbook Pro",
-        "description": "An apple mobile which is nothing like apple",
-        "price": 549,
-        "discountPercentage": 12.96,
-        "rating": 4.69,
-        "stock": 94,
-        "brand": "Apple",
+        "description": "The MacBook Pro is a high-performance laptop by Apple. It features a stunning Retina display, Apple M1 chip, and powerful graphics. Whether you're a creative professional or a power user, it's designed to handle demanding tasks with ease.",
+        "price": 1299,
         "category": "Computadoras",
-        "thumbnail": "https://cdn.discordapp.com/attachments/730435854555807845/1130925195775975495/ihpone_13.png",
         "images": [
-            "https://cdn.discordapp.com/attachments/730435854555807845/1131021476200452177/notebook-apple-macbook-pro-m1-13-8c-8g-ssd-512gb-myd92le-a.png",
-            "https://i.dummyjson.com/data/products/1/2.jpg",
-            "https://i.dummyjson.com/data/products/1/3.jpg",
-            "https://i.dummyjson.com/data/products/1/4.jpg",
-            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+            "https://cdn.discordapp.com/attachments/730435854555807845/1131021476200452177/notebook-apple-macbook-pro-m1-13-8c-8g-ssd-512gb-myd92le-a.png"
         ]
     },
     {
         "id": 7,
         "title": "iMac 24",
-        "description": "An apple mobile which is nothing like apple",
-        "price": 549,
-        "discountPercentage": 12.96,
-        "rating": 4.69,
-        "stock": 94,
-        "brand": "Apple",
+        "description": "The iMac 24 is a sleek all-in-one desktop computer from Apple. It features a vibrant 24-inch 4.5K Retina display, Apple M1 chip, and a range of colors to choose from. It's perfect for work and entertainment in a stylish package.",
+        "price": 1299,
         "category": "Computadoras",
-        "thumbnail": "https://cdn.discordapp.com/attachments/730435854555807845/1130925195775975495/ihpone_13.png",
         "images": [
-            "https://cdn.discordapp.com/attachments/730435854555807845/1131021935778742292/iMac24_2P_SIL_001.png",
-            "https://i.dummyjson.com/data/products/1/2.jpg",
-            "https://i.dummyjson.com/data/products/1/3.jpg",
-            "https://i.dummyjson.com/data/products/1/4.jpg",
-            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+            "https://cdn.discordapp.com/attachments/730435854555807845/1131021935778742292/iMac24_2P_SIL_001.png"
         ]
     },
     {
         "id": 8,
         "title": "Mac Mini",
-        "description": "An apple mobile which is nothing like apple",
-        "price": 549,
-        "discountPercentage": 12.96,
-        "rating": 4.69,
-        "stock": 94,
-        "brand": "Apple",
+        "description": "The Mac Mini is a compact and powerful desktop computer by Apple. It features the Apple M1 chip for excellent performance and connectivity options. Whether for work or as a home server, it's a versatile choice.",
+        "price": 599,
         "category": "Computadoras",
-        "thumbnail": "https://cdn.discordapp.com/attachments/730435854555807845/1130925195775975495/ihpone_13.png",
         "images": [
-            "https://cdn.discordapp.com/attachments/730435854555807845/1131022151210774528/Apple_Mac_Mini_Chip_M1_ssd_512Gb_MGNT3LEA_1.png",
-            "https://i.dummyjson.com/data/products/1/2.jpg",
-            "https://i.dummyjson.com/data/products/1/3.jpg",
-            "https://i.dummyjson.com/data/products/1/4.jpg",
-            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+            "https://cdn.discordapp.com/attachments/730435854555807845/1131022151210774528/Apple_Mac_Mini_Chip_M1_ssd_512Gb_MGNT3LEA_1.png"
+        ]
+    },
+    {
+        "id": 10,
+        "title": "iPad Pro",
+        "description": "The iPad Pro is a powerful tablet by Apple. It features a Liquid Retina XDR display, Apple M1 chip, and support for the Apple Pencil and Magic Keyboard. Whether for work or creativity, it offers a premium tablet experience.",
+        "price": 799,
+        "category": "iPad",
+        "images": [
+            "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-storage-select-202212-11inch-space-gray?wid=2560&hei=1440&fmt=p-jpg&qlt=95&.v=1667595162112"
+        ]
+    },
+    {
+        "id": 11,
+        "title": "iPad Air",
+        "description": "The iPad Air combines power and portability. It features a stunning Liquid Retina display, A15 Bionic chip, and compatibility with the Apple Pencil and Smart Keyboard. Whether for work or play, it's a versatile tablet.",
+        "price": 599,
+        "category": "iPad",
+        "images": [
+            "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-air-finish-select-gallery-202211-space-gray?wid=2560&hei=1440&fmt=p-jpg&qlt=95&.v=1667585247239"
+        ]
+    },
+    {
+        "id": 12,
+        "title": "iPad",
+        "description": "The iPad is an affordable and versatile tablet by Apple. It features a Retina display, A13 Bionic chip, and support for the Apple Pencil. Whether for productivity or entertainment, it's a great choice.",
+        "price": 499,
+        "category": "iPad",
+        "images": [
+            "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-10th-gen-storage-select-202212-silver?wid=2560&hei=1440&fmt=p-jpg&qlt=95&.v=1667592913415"
+        ]
+    },
+    {
+        "id": 13,
+        "title": "iPad Mini",
+        "description": "The iPad Mini is a compact and portable tablet by Apple. It features a stunning display, A15 Bionic chip, and compatibility with the Apple Pencil. Whether on the go or at home, it's a versatile companion.",
+        "price": 449,
+        "category": "iPad",
+        "images": [
+            "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-mini-storage-select-202207-space-gray?wid=2560&hei=1440&fmt=p-jpg&qlt=95&.v=1670950637990"
+        ]
+    },
+    {
+        "id": 14,
+        "title": "Apple Watch Ultra",
+        "description": "The Apple Watch Ultra is the ultimate smartwatch by Apple. It features a sleek design, always-on Retina display, and a range of fitness and health tracking features. Stay connected and motivated with this premium wearable.",
+        "price": 799,
+        "category": "Apple Watch",
+        "images": [
+            "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ultra-band-select-202307-alpineloop_AV1?wid=2560&hei=1640&fmt=p-jpg&qlt=80&.v=NFljY09vWVZpeWVTU3pxNzBxYmlodTMrRzhqVjBlV0VERDNYbU95Z1JjMjZUb3kvOHFOYk9KU2ZNLzMyaStPL0hhM2J3cllhUC90ek03RkNCdE1YVjBwUXBKSm5JTEZ3bmFCZ2s4QnRiQ1BDcnSvYm5Pa3U3ZnQ3Ky9keSs2OWQ"
+        ]
+    },
+    {
+        "id": 15,
+        "title": "Apple Watch Series 8",
+        "description": "The Apple Watch Series 8 is a cutting-edge smartwatch by Apple. It offers advanced health and fitness tracking, a bright display, and seamless integration with your iPhone. Stay connected and monitor your well-being with style.",
+        "price": 799,
+        "category": "Apple Watch",
+        "images": [
+            "https://http2.mlstatic.com/D_NQ_NP_914414-MLB51804338989_102022-O.webp"
+        ]
+    },
+    {
+        "id": 16,
+        "title": "Apple Watch SE",
+        "price": 249,
+        "description": "The Apple Watch SE offers essential smartwatch features at an affordable price. It includes fitness tracking, notifications, and a beautiful Retina display. Get the Apple Watch experience without breaking the bank.",
+        "category": "Apple Watch",
+        "images": [
+            "https://http2.mlstatic.com/D_NQ_NP_790438-MLB51804340740_102022-O.webp"
+        ]
+    },
+    {
+        "id": 17,
+        "title": "Apple Watch Hermès",
+        "description": "The Apple Watch Hermès is a luxury smartwatch collaboration between Apple and Hermès. It combines premium craftsmanship with advanced technology. Elevate your style and enjoy the best of both worlds with this exquisite timepiece.",
+        "price": 1229,
+        "category": "Apple Watch",
+        "images": [
+            "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MKG53_VW_34FR+watch-45-stainless-silver-cell-hermes8s_VW_34FR_WF_CO+watch-face-45-hermes8s-luckyhorse-capucine_VW_34FR_WF_CO_GEO_MX?wid=2000&hei=2000&fmt=png-alpha&.v=1683263153331"
+        ]
+    },
+    {
+        "id": 18,
+        "title": "AirPods Pro",
+        "description": "The AirPods Pro are premium wireless earbuds by Apple. They offer active noise cancellation, immersive sound, and a comfortable fit. Enjoy crystal-clear audio and a seamless listening experience.",
+        "price": 249,
+        "category": "Auriculares",
+        "images": [
+            "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MQD83?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1660803972361"
+        ]
+    },
+    {
+        "id": 19,
+        "title": "AirPods 3rd Generation",
+        "description": "The AirPods 3rd Generation offer high-quality wireless audio at an affordable price. They feature spatial audio, seamless device switching, and a long-lasting battery. Enjoy a premium audio experience on the go.",
+        "price": 169,
+        "category": "Auriculares",
+        "images": [
+            "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73_AV2?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1632861338000"
+        ]
+    },
+    {
+        "id": 20,
+        "title": "AirPods 2nd Generation",
+        "description": "The AirPods 2nd Generation offer a wireless and convenient audio experience. They feature easy setup, Siri integration, and great sound quality. Stay connected and enjoy your favorite music and podcasts.",
+        "price": 129,
+        "category": "Auriculares",
+        "images": [
+            "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MV7N2?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1551489688005"
+        ]
+    },
+    {
+        "id": 21,
+        "title": "AirPods Max",
+        "description": "The AirPods Max are premium over-ear headphones by Apple. They offer high-fidelity audio, active noise cancellation, and a comfortable fit. Immerse yourself in music and enjoy a luxurious listening experience.",
+        "price": 549,
+        "category": "Auriculares",
+        "images": [
+            "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-max-hero-select-202011?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1604709293000"
+        ]
+    },
+    {
+        "id": 22,
+        "title": "MagSafe Charger",
+        "description": "The MagSafe Charger by Apple is a magnetic wireless charging solution. It's designed to work with iPhone 12 and later models, providing fast and efficient wireless charging. Keep your device powered up with ease.",
+        "price": 39,
+        "category": "Accesorios",
+        "images": [
+            "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MHXH3?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1661269793559"
+        ]
+    },
+    {
+        "id": 23,
+        "title": "iPhone Wallet with MagSafe",
+        "description": "The iPhone Wallet with MagSafe is a convenient accessory by Apple. It attaches magnetically to your iPhone, providing a secure way to carry your essentials like credit cards and IDs. Simplify your everyday life with this accessory.",
+        "price": 39,
+        "category": "Accesorios",
+        "images": [
+            "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MM0Y3?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1629865261000"
+        ]
+    },
+    {
+        "id": 24,
+        "title": "20W USB-C Power Adapter",
+        "description": "The 20W USB-C Power Adapter by Apple provides fast charging for your devices. It's compatible with a range of Apple products and ensures quick and efficient power delivery. Keep your devices charged and ready to go.",
+        "price": 19,
+        "category": "Accesorios",
+        "images": [
+            "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MU7T2_GEO_US?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1542406417329"
+        ]
+    },
+    {
+        "id": 25,
+        "title": "MagSafe Duo Charger",
+        "description": "The MagSafe Duo Charger by Apple is a versatile charging solution. It can charge your iPhone and Apple Watch simultaneously, and it folds for easy portability. Stay powered up on the go with this compact charger.",
+        "price": 129,
+        "category": "Accesorios",
+        "images": [
+            "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MHXF3?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1602179308000"
         ]
     }
 ]

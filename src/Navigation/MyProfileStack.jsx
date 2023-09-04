@@ -1,9 +1,9 @@
 import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import Header from "../Components/Header";
+import Header from "../Components/header/Header";
 import MyProfile from "../Screens/MyProfile";
 import ImageSelector from "../Screens/ImageSelector";
-import User  from "../Screens/UserScreen";
+import UserScreen  from "../Screens/UserScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -18,7 +18,7 @@ const MyProfileStack = () => {
             })}
         >
             <Stack.Screen name="Mi Perfil" component={MyProfile} />
-            <Stack.Screen name="Nombre de Usuario" component={User} />
+            <Stack.Screen name="Nombre de Usuario" component={UserScreen} />
             <Stack.Screen name="Seleccionar Imagen" component={ImageSelector} />
         </Stack.Navigator>
     );

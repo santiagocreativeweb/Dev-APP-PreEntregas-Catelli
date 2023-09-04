@@ -1,4 +1,4 @@
-export const realtime_database_url = 'https://react-native-a429f-default-rtdb.firebaseio.com/'
+export const realtime_database_url = 'https://react-native-a429f-default-rtdb.firebaseio.com/' //url 
 
-export const api_key = 'AIzaSyB_R4X4bEIh0Iq1lKqnth-lChr8UKVgpiY'
+export const api_key = 'AIzaSyDKJpHVPbQ_0Vdk0X7RxUc2zr3Abu3SU_U' //api
 

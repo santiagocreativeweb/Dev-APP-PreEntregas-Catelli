@@ -1,6 +1,7 @@
 import {createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react"
 import { realtime_database_url } from "../Database/firebaseConfig"
 
+
 export const shopApi = createApi({
     reducerPath: 'shopApi',
     baseQuery: fetchBaseQuery({baseUrl: realtime_database_url}),
@@ -25,13 +26,6 @@ export const shopApi = createApi({
                 return (productTransformed)
             }
         }),
-        postCart: builder.mutation({
-            query: (order) => ({
-                url: `orders.json`,
-                method: `POST`,
-                body: order
-            })
-        }),
         getProfileImage: builder.query({
             query: (localId) => `profileImages/${localId}.json`,
         }),
@@ -45,31 +39,16 @@ export const shopApi = createApi({
                 },
             }),
         }),
-        getUserLocation: builder.query({
-            query: (localId) => `locations/${localId}.json`,
-        }),
-        postUserLocation: builder.mutation({
-            query: ({location, localId}) => ({
-                url: `locations/${localId}.json`,
-                method: "PUT",
-                body: {
-                    latitude: location.latitude,
-                    longitude: location.longitude,
-                    address: location.address
-                }
-            })
-        }),
     })
 })
 
 export const {
-    useGetCategoriesQuery, 
+    useGetCategoriesQuery,
     useGetProductsQuery, 
     useGetProductsByCategoryQuery,
     useGetProductByIdQuery,
-    usePostCartMutation,
     useGetProfileImageQuery,
     usePostProfileImageMutation,
-    useGetUserLocationQuery,
-    usePostUserLocationMutation,
+    useGetNameQuery,
+    usePostNameMutation,
 } = shopApi

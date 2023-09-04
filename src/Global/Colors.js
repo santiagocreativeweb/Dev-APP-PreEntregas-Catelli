@@ -1,17 +1,14 @@
 export const colors = {
-    red: "#FF6666",
-    peach: "#FF8989",
-    pink: "#FCAEAE",
-    lightPink: "#FFEADD",
-    header: "#393547",
-    headerchill: "#564F6C",
-    white: "#fff",
-    black: "#000000",
+    primary: "#233041", // Azul oscuro
+    secondary: "#564F6C", // Azul clarito
+    terciary: "#F5F5F5", // Gris claro
+    header: "#CBCBCB", // Gris claro
+    // Colores default
+    white: "#fff", // Blanco
+    black: "#000000", // Negro
+    red: "#FF6666", // Rojo
+    gray: "#e5e5e5", // Gris
+    green: "#80ffdb" // verde
 }
 
-/* export const colors = {
-    red: "#FF6666",
-    peach: "#FF8989",
-    pink: "#FCAEAE",
-    lightPink: "#FFEADD"
-} */
+

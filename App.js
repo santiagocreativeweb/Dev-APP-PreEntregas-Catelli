@@ -1,12 +1,12 @@
 import { useEffect } from 'react';
-import { useFonts } from 'expo-font';
 import { Provider } from 'react-redux';
-
-
-import Navigator from './src/Navigation/Navigator';
-import store from './src/Store/store';
+import { useFonts } from 'expo-font';
 import { init } from './src/SQLite';
+import { CustomToast } from './src/Components/alertas/Toast';
+import store from './src/Store/store';
 import fonts from './src/Assets';
+import Navigator from './src/Navigation/Navigator';
+import Toast from 'react-native-toast-message';
 
 
 export default function App() {
@@ -15,6 +15,12 @@ export default function App() {
       .then((result)=> {
       })
       .catch(err => {
+        Toast.show({
+          type: 'error',
+          text1: `Ups..`,
+          text2: 'Hubo un error, intente mas tarde',
+          topOffset: 100,
+      });
     })
   }, [])
   
@@ -27,6 +33,7 @@ export default function App() {
   return (
     <Provider store={store}>
       <Navigator/>
+      <CustomToast /> 
     </Provider>
   );
 }
